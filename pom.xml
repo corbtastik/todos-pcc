@@ -23,6 +23,23 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <!-- https://gemfire.docs.pivotal.io/gemfire/getting_started/installation/obtain_gemfire_maven.html -->
+        <dependency>
+            <groupId>io.pivotal.gemfire</groupId>
+            <artifactId>geode-core</artifactId>
+            <version>9.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.pivotal.gemfire</groupId>
+            <artifactId>geode-wan</artifactId>
+            <version>9.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.pivotal.gemfire</groupId>
+            <artifactId>geode-cq</artifactId>
+            <version>9.6.1</version>
+        </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -107,6 +124,11 @@
 
     <repositories>
         <repository>
+            <id>gemfire-release-repo</id>
+            <name>Pivotal GemFire Release Repository</name>
+            <url>https://commercial-repo.pivotal.io/data3/gemfire-release-repo/gemfire</url>
+        </repository>
+        <repository>
             <id>spring-repository</id>
             <name>Spring Repository</name>
             <url>https://repo.spring.io/release</url>
@@ -119,7 +141,7 @@
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
+            <url>https://repo.spring.io/libs-snapshot</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
