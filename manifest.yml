@@ -1,0 +1,8 @@
+---
+applications:
+- name: todos-pcc
+  memory: 1G
+  path: target/todos-pcc-1.0.0.SNAP.jar
+  buildpack: java_buildpack_offline
+  services:
+  - todos-pcc
