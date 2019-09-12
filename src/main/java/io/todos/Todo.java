@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Region("todos")
+@Region("Todos")
 class Todo implements Serializable {
     private Long id;
     private String title;
